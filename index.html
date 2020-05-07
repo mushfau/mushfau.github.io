@@ -8,7 +8,8 @@
     <style>
         @media only screen and (max-width: 600px) {
             ul {
-                padding-left: 20px;
+                padding-left: 15px;
+                padding-right: 10px;
             }
         }
 
@@ -22,7 +23,7 @@
             /* background-color: black; */
             color: whitesmoke;
             line-height: 1.5;
-            border-left: 2px solid darkgreen;
+            border-left: 1px solid#2b2929;
         }
 
         li {
@@ -34,58 +35,83 @@
             /* background-color: #EEEEEE; */
             font-family: Consolas, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New;
         }
+
+        .purple {
+            color: purple;
+        }
+
+        .cornflowerblue {
+            color: cornflowerblue;
+        }
+
+        .teal {
+            color: teal;
+        }
+
+        .key {
+            color: lightblue;
+            font-weight: bold;
+        }
+
+        .value {
+            color: sandybrown;
+        }
+
+        .bvalue {
+            color: #39aeae;
+        }
     </style>
 </head>
 
 <body>
-    <div style="text-align: left; padding-top: 50px;"> 
+    <div style="text-align: left; padding-top: 50px;">
         <div class="image"
-            style="margin: auto; width:120px;height:120px;background-image:url(https://aboutme.imgix.net/background/users/m/u/s/mushfau_1588855054_914.jpg?q=40&amp;dpr=2&amp;auto=format&amp;fit=max&amp;w=120&amp;h=120&amp;rect=0,0,150,150);background-size:cover;border-radius:50%;background-repeat:no-repeat;background-position:center center">
+            style="margin: auto; margin-bottom: 50PX; width:120px;height:120px;background-image:url(https://aboutme.imgix.net/background/users/m/u/s/mushfau_1588855054_914.jpg?q=40&amp;dpr=2&amp;auto=format&amp;fit=max&amp;w=120&amp;h=120&amp;rect=0,0,150,150);background-size:cover;border-radius:50%;background-repeat:no-repeat;background-position:center center">
         </div>
         <code>
-            <ul style="padding-top: 50px; max-width: 992px; margin: auto;">
-                <li>export class Person {</li>
+            <ul style=" max-width: 992px; margin: auto;">
+                <li><span class="purple">export</span>  <span class="cornflowerblue">class</span> <span class="teal">Person</span>  {</li>
                 <li>
                     <ul>
-                        <li>personal: {</li>
+                        <li><span class="key">personal</span> : {</li>
                         <li>
                             <ul>
-                                <li>name: { </li>
+                                <li><span class="key">name</span>: { </li>
                                 <li>
                                     <ul>
-                                        <li>first: Ibrahim,</li>
-                                        <li>middle: Mushfau,</li>
-                                        <li>last: Saeed </li>
+                                        <li><span class="key">first</span>: <span class="value">Ibrahim</span>,</li>
+                                        <li><span class="key">middle</span>: <span class="value">Mushfau</span>,</li>
+                                        <li><span class="key">last</span>: <span class="value">Saeed</span> </li>
                                     </ul>
                                 </li>
                                 <li>}</li>
-                                <li> dob: { </li>
+                                <li><span class="key">dob</span> : { </li>
                                 <li>
                                     <ul>
-                                        <li> day: 29, </li>
-                                        <li> month: November,</li>
-                                        <li> year: 1984 </li>
+                                        <li><span class="key">day</span> : <span class="value">29</span>, </li>
+                                        <li><span class="key">month</span> : <span class="value">November</span>,</li>
+                                        <li><span class="key">year</span>: <span class="value">1984</span> </li>
                                     </ul>
                                 </li>
                                 <li>}</li>
-                                <li>email: mushfau@gmail.com</li>
-                                <li>from: Maldives</li>
-                                <li>contact: {</li>
+                                <li><span class="key">email</span>: <span class="value">mushfau@gmail.com</span></li>
+                                <li><span class="key">from</span>: <span class="value">Maldives</span></li>
+                                <li><span class="key">contact</span>: {</li>
                                 <li>
                                     <ul>
-                                        <li>number: +960 7774487,</li>
-                                        <li> telegram: true,</li>
-                                        <li> viber: true,</li>
-                                        <li> whatsApp: true</li>
+                                        <li> <span class="key">number</span>: <span class="value">+960 7774487</span>,</li>
+                                        <li> <span class="key">telegram</span>: <span class="bvalue">true</span>,</li>
+                                        <li> <span class="key">viber</span>: <span class="bvalue">true</span>,</li>
+                                        <li> <span class="key">whatsApp</span>: <span class="bvalue">true</span></li>
                                     </ul>
                                 </li>
                                 <li>}</li>
-                                <li>social: {</li>
+                                <li><span class="key">social</span>: {</li>
                                 <li>
                                     <ul>
-                                        <li> facebook: https://www.facebook.com/mushfau,</li>
-                                        <li> twitter: https://twitter.com/mushfau,</li>
-                                        <li> instagram: https://instagram.com/mushfau</li>
+                                        <li><span class="key">facebook</span>: <span class="value">https://www.facebook.com/mushfau</span>,</li>
+                                        <li><span class="key">twitter</span>: <span class="value">https://twitter.com/mushfau</span>,</li>
+                                        <li><span class="key">instagram</span>: <span class="value">https://instagram.com/mushfau</span></li>
                                     </ul>
                                 </li>
                                 <li>}</li> 
@@ -93,18 +119,18 @@
                         </li>
                         <li>}</li>
 
-                        <li>skills: {</li>
+                        <li><span class="key">skills</span>: {</li>
                         <li>
                             <ul>
-                                <li> languages: [</li>
+                                <li> <span class="key">languages</span>: [</li>
                                 <li>
                                     <ul>
-                                        <li>{ name: PHP, level: 7/10 },</li>
-                                        <li> { name: JavaScript, level: 8/10 },</li>
-                                        <li> { name: C/C++, level: 7/10 },</li>
-                                        <li> { name: Java, level: 7/10 },</li>
-                                        <li> { name: HTML, level: 8/10 },</li>
-                                        <li> { name: CSS, level: 7/10 },</li>
+                                        <li>{ <span class="key">name</span>: <span class="value">PHP</span>, <span class="key">level</span>: <span class="value">7/10</span> },</li>
+                                        <li> { <span class="key">name</span>: <span class="value">JavaScript</span>, <span class="key">level</span>: <span class="value">8/10</span> },</li>
+                                        <li> { <span class="key">name</span>: <span class="value">C/C++</span>, <span class="key">level</span>: <span class="value">7/10</span> },</li>
+                                        <li> { <span class="key">name</span>: <span class="value">Java</span>, <span class="key">level</span>: <span class="value">7/10</span> },</li>
+                                        <li> { <span class="key">name</span>: <span class="value">HTML</span>, <span class="key">level</span>: <span class="value">8/10</span> },</li>
+                                        <li> { <span class="key">name</span>: <span class="value">CSS</span>, <span class="key">level</span>: <span class="value">7/10</span> },</li>
                                     </ul>
                                 </li>
                                 <li>]</li>
@@ -112,14 +138,14 @@
                         </li>
                         <li>
                             <ul>
-                                <li> tools: [</li>
+                                <li> <span class="key">tools</span>: [</li>
                                 <li>
                                     <ul>
-                                        <li> { name: Git, level: 8/10 },</li>
-                                        <li> { name: CircleCI, level: 7/10 },</li>
-                                        <li> { name: Jenkins, level: 7/10 },</li>
-                                        <li> { name: Docker, level: 7/10 },</li>
-                                        <li> { name: Vagrant, level: 8/10 },</li>
+                                        <li> { <span class="key">name</span>: <span class="value">Git</span>, <span class="key">level</span>: <span class="value">8/10</span> },</li>
+                                        <li> { <span class="key">name</span>: <span class="value">Circle CI</span>, <span class="key">level</span>: <span class="value">7/10</span> },</li>
+                                        <li> { <span class="key">name</span>: <span class="value">Jenkins</span>, <span class="key">level</span>: <span class="value">7/10</span> },</li>
+                                        <li> { <span class="key">name</span>: <span class="value">Docker</span>, <span class="key">level</span>: <span class="value">7/10</span> },</li>
+                                        <li> { <span class="key">name</span>: <span class="value">Vagrant</span>, <span class="key">level</span>: <span class="value">8/10</span> },</li>
                                     </ul>
                                 </li>
                                 <li>]</li>
@@ -127,12 +153,12 @@
                         </li>
                         <li>
                             <ul>
-                                <li> databases: [</li>
+                                <li> <span class="key">databases</span>: [</li>
                                 <li>
                                     <ul>
-                                        <li> { name: MySQL, level: 7/10 },</li>
-                                        <li> { name: Postgres, level: 7/10 },</li>
-                                        <li> { name: MongoDb, level: 8/10 },</li>
+                                        <li> { <span class="key">name</span>: <span class="value">MySQL</span>, <span class="key">level</span>: <span class="value">7/10</span> },</li>
+                                        <li> { <span class="key">name</span>: <span class="value">Postgres</span>, <span class="key">level</span>: <span class="value">7/10</span> },</li>
+                                        <li> { <span class="key">name</span>: <span class="value">MongoDB</span>, <span class="key">level</span>: <span class="value">8/10</span> },</li>
                                     </ul>
                                 </li>
                                 <li>]</li>
@@ -140,13 +166,13 @@
                         </li>
                         <li>
                             <ul>
-                                <li> frameworks: [</li>
+                                <li> <span class="key">frameworks</span>: [</li>
                                 <li>
                                     <ul>
-                                        <li>{ name: Angular, level: 8/10 },</li>
-                                        <li> { name: Ionic, level: 7/10 },</li>
-                                        <li> { name: Laravel, level: 7/10 },</li>
-                                        <li> { name: NestJs, level: 7/10 },</li>
+                                        <li> { <span class="key">name</span>: <span class="value">Angular</span>, <span class="key">level</span>: <span class="value">8/10</span> },</li>
+                                        <li> { <span class="key">name</span>: <span class="value">Ionic</span>, <span class="key">level</span>: <span class="value">7/10 </span>},</li>
+                                        <li> { <span class="key">name</span>: <span class="value">Laravel</span>, <span class="key">level</span>: <span class="value">7/10</span> },</li>
+                                        <li> { <span class="key">name</span>: <span class="value">NestJs</span>, <span class="key">level</span>: <span class="value">7/10 </span>},</li>
                                     </ul>
                                 </li>
                                 <li>]</li>
@@ -154,15 +180,15 @@
                         </li>
                         <li>
                             <ul>
-                                <li> others: [</li>
+                                <li> <span class="key">others</span>: [</li>
                                 <li>
                                     <ul>
-                                        <li> { name: AWS, level: 7/10 },</li>
-                                        <li> { name: Linux, level: 7/10 },</li>
-                                        <li> { name: Shopify, level: 8/10 },</li>
-                                        <li> { name: Wordpress, level: 6/10 },</li>
-                                        <li> { name: Bootstrap, level: 8/10 },</li>
-                                        <li> { name: JQurey, level: 8/10 },</li>
+                                        <li> { <span class="key">name</span>: <span class="value">AWS</span>, <span class="key">level</span>: <span class="value">7/10 </span>},</li>
+                                        <li> { <span class="key">name</span>: <span class="value">Linux</span>, <span class="key">level</span>: <span class="value">7/10</span> },</li>
+                                        <li> { <span class="key">name</span>: <span class="value">Shopify</span>, <span class="key">level</span>: <span class="value">8/10</span> },</li>
+                                        <li> { <span class="key">name</span>: <span class="value">Wordpress</span>, <span class="key">level</span>: <span class="value">6/10</span> },</li>
+                                        <li> { <span class="key">name</span>: <span class="value">Bootstrap</span>, <span class="key">level</span>: <span class="value">8/10</span> },</li>
+                                        <li> { <span class="key">name</span>: <span class="value">JQuery</span>, <span class="key">level</span>: <span class="value">8/10</span> },</li>
                                     </ul>
                                 </li>
                                 <li>]</li>
@@ -170,17 +196,17 @@
                         </li>
                         <li>}</li>
 
-                        <li>work: [</li>
+                        <li><span class="key">work</span>: [</li>
                         <li>
                             <ul>
                                 <li>{</li>
                                 <li>
                                     <ul>
-                                        <li> company: Tractive Sdn Bhd, Malaysia,</li>
-                                        <li> location: Remote, Maldives,</li>
-                                        <li> position: Software Engineer,</li>
-                                        <li> from: 2016,</li>
-                                        <li> to: ,</li>
+                                        <li> <span class="key">company</span>: <span class="value">Tractive Sdn Bhd, Malaysia</span>,</li>
+                                        <li> <span class="key">location</span>: <span class="value">Remote</span>,</li>
+                                        <li> <span class="key">position</span>: <span class="value">Software Engineer</span>,</li>
+                                        <li> <span class="key">from</span>: <span class="value">2016</span>,</li>
+                                        <li> <span class="key">to</span>: <span class="bvalue">now</span>,</li>
 
                                     </ul>
                                 </li>
@@ -192,11 +218,11 @@
                                 <li>{</li>
                                 <li>
                                     <ul>
-                                        <li> company: Center for Technology & Innovation (APIIT), Malaysia,</li>
-                                        <li> location: KL, Malaysia,</li>
-                                        <li> position: Software Developer / Inter,</li>
-                                        <li> from: Dec 2015,</li>
-                                        <li> to: Mar 2016,</li>
+                                        <li> <span class="key">company</span>: <span class="value">Center for Technology & Innovation (APIIT), Malaysia</span>,</li>
+                                        <li> <span class="key">location</span>: <span class="value">KL, Malaysia</span>,</li>
+                                        <li> <span class="key">position</span>: <span class="value">Software Developer / Inter</span>,</li>
+                                        <li> <span class="key">from</span>: <span class="value">Dec 2015</span>,</li>
+                                        <li> <span class="key">to</span>: <span class="value">Mar 2016</span>,</li>
 
                                     </ul>
                                 </li>
@@ -208,44 +234,11 @@
                                 <li>{</li>
                                 <li>
                                     <ul>
-                                        <li> company: Dhiraagu, Maldives,</li>
-                                        <li> location: Addu, Maldives,</li>
-                                        <li> position: Senior Tech. Telecomm Systems,</li>
-                                        <li> from: Jun 2005,</li>
-                                        <li> to: Jan 2014,</li>
-
-                                    </ul>
-                                </li>
-                                <li>},</li>
-                            </ul>
-                        </li>
-                        <li>]</li>
-
-                        <li>acedamics: [</li>
-                        <li>
-                            <ul>
-                                <li>{</li>
-                                <li>
-                                    <ul>
-                                        <li> course: Bachelor of Science in Information Technology,</li>
-                                        <li> major: Intelligent Systems,</li>
-                                        <li> institution: Asia Pacific University, Malaysia,</li>
-                                        <li> year: 2017,</li>
-
-                                    </ul>
-                                </li>
-                                <li>},</li>
-                            </ul>
-                        </li>
-                        <li>
-                            <ul>
-                                <li>{</li>
-                                <li>
-                                    <ul>
-                                        <li> course: GCS A/Level,</li>
-                                        <li> major: Math, Physics,</li>
-                                        <li> institution: Center for Higher Education, Maldives,</li>
-                                        <li> year: 2002,</li>
+                                        <li> <span class="key">company</span>: <span class="value">Dhiraagu, Maldives</span>,</li>
+                                        <li> <span class="key">location</span>: <span class="value">Addu, Maldives</span>,</li>
+                                        <li> <span class="key">position</span>: <span class="value">Senior Tech. Telecomm Systems</span>,</li>
+                                        <li> <span class="key">from</span>: <span class="value">Jun 2005</span>,</li>
+                                        <li> <span class="key">to</span>: <span class="value">Jan 2014</span>,</li>
 
                                     </ul>
                                 </li>
@@ -254,20 +247,53 @@
                         </li>
                         <li>]</li>
 
-                        <li>projects: [</li>
+                        <li><span class="key">academics</span>: [</li>
+                        <li>
+                            <ul>
+                                <li>{</li>
+                                <li>
+                                    <ul>
+                                        <li> <span class="key">course</span>: <span class="value">Bachelor of Science in Information Technology</span>,</li>
+                                        <li> <span class="key">major</span>: <span class="value">Intelligent Systems</span>,</li>
+                                        <li> <span class="key">institution</span>: <span class="value">Asia Pacific University, Malaysia</span>,</li>
+                                        <li> <span class="key">year</span>: <span class="value">2017</span>,</li>
+
+                                    </ul>
+                                </li>
+                                <li>},</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul>
+                                <li>{</li>
+                                <li>
+                                    <ul>
+                                        <li> <span class="key">course</span>: <span class="value">GCS A/Level</span>,</li>
+                                        <li> <span class="key">major</span>: <span class="value">Math, Physics</span>,</li>
+                                        <li> <span class="key">institution</span>: <span class="value">Center for Higher Education, Maldives</span>,</li>
+                                        <li> <span class="key">year</span>: <span class="value">2002</span>,</li>
+
+                                    </ul>
+                                </li>
+                                <li>},</li>
+                            </ul>
+                        </li>
+                        <li>]</li>
+
+                        <li><span class="key">projects</span>: [</li>
                         <li>
                             <ul>
                                 <li>{</li>
                                 <li>
                                     <ul>
 
-                                        <li> title: Course feedback system,</li>
-                                        <li> client: Asia Pacific University,</li>
-                                        <li> description: Web portal where students submit feedback on course contents
+                                        <li> <span class="key">title</span>: <span class="value">Course feedback system</span>,</li>
+                                        <li> <span class="key">client</span>: <span class="value">Asia Pacific University</span>,</li>
+                                        <li> <span class="key">description</span>: <span class="value">Web portal where students submit feedback on course contents
                                             and
-                                            lecturers,</li>
-                                        <li>role: Frontend & backend development,</li>
-                                        <li> status: Done</li>
+                                            lecturers</span>,</li>
+                                        <li> <span class="key">role</span>: <span class="value">Frontend & backend development</span>,</li>
+                                        <li> <span class="key">status</span>: <span class="value">Done</span></li>
 
                                     </ul>
                                 </li>
@@ -281,12 +307,12 @@
                                 <li>
                                     <ul>
 
-                                        <li> title: Digital Signage Managment System, </li>
-                                        <li> client: Tractive Sdn Bhd, </li>
-                                        <li> description: Centralized CMS to manage remote displays for digital ads
-                                            delivery, </li>
-                                        <li> role: Backend development, </li>
-                                        <li> status: Done</li>
+                                        <li> <span class="key">title</span>: <span class="value">Digital Signage Managment System</span>, </li>
+                                        <li> <span class="key">client</span>: <span class="value">Tractive Sdn Bhd</span>, </li>
+                                        <li> <span class="key">description</span>: <span class="value">Centralized CMS to manage remote displays for digital ads
+                                            delivery</span>, </li>
+                                        <li> <span class="key">role</span>: <span class="value">Backend development</span>, </li>
+                                        <li> <span class="key">status</span>: <span class="value">Done</span></li>
 
                                     </ul>
                                 </li>
@@ -299,11 +325,11 @@
                                 <li>{</li>
                                 <li>
                                     <ul>
-                                        <li> title: B2B Ordering system, </li>
-                                        <li> client: Runcit Hero, </li>
-                                        <li> description: Online whole sale order managment system </li>
-                                        <li> role: Fullstack, </li>
-                                        <li> status: Done</li>
+                                        <li> <span class="key">title</span>: <span class="value">B2B Ordering system</span>, </li>
+                                        <li> <span class="key">client</span>: <span class="value">Runcit Hero</span>, </li>
+                                        <li> <span class="key">description</span>: <span class="value">Online whole sale order managment system</span> </li>
+                                        <li> <span class="key">role</span>: <span class="value">Fullstack</span>, </li>
+                                        <li> <span class="key">status</span>: <span class="value">Done</span></li>
 
                                     </ul>
                                 </li>
@@ -317,27 +343,26 @@
                                 <li>
                                     <ul>
 
-                                        <li> title: Laboratory Information System, </li>
-                                        <li> client: Addu Equatorial Hospital,</li>
-                                        <li> description: Web-based information system for medical laboratory, </li>
-                                        <li> role: Fullstack, </li>
-                                        <li> status: Done </li>
+                                        <li> <span class="key">title</span>: <span class="value">Laboratory Information System</span>, </li>
+                                        <li> <span class="key">client</span>: <span class="value">Addu Equatorial Hospital</span>,</li>
+                                        <li> <span class="key">description</span>: <span class="value">Web-based information system for medical laboratory</span>, </li>
+                                        <li> <span class="key">role</span>: <span class="value">Fullstack</span>, </li>
+                                        <li> <span class="key">status</span>: <span class="value">Done</span> </li>
                                     </ul>
                                 </li>
-                                <li>}</li>
+                                <li>},</li>
                             </ul>
                         </li>
-
                         <li>]</li>
 
-                        <li>likes: [</li>
+                        <li><span class="key">likes</span>: [</li>
                         <li>
                             <ul>
-                                <li>Coffeeing,</li>
-                                <li>Long distance running,</li>
-                                <li>Coding,</li>
-                                <li>Exercising,</li>
-                                <li>Sleeping :)</li>
+                                <li><span class="value">Coffeeing</span>,</li>
+                                <li><span class="value">Long distance running</span>,</li>
+                                <li><span class="value">Coding</span>,</li>
+                                <li><span class="value">Exercising</span>,</li>
+                                <li><span class="value">Sleeping :)</span> </li>
                             </ul>
                         </li>
                         <li>]</li>
@@ -347,6 +372,8 @@
             </ul>
         </code>
     </div>
+    <br>
+    <br>
 </body>
 
 </html>
